@@ -1,7 +1,7 @@
 # dromedary :dromedary_camel:
-Dromedary is a sample application created by [Stelligent](https://stelligent.com/) as a very simple, lightweight yet useful application primarily used
+Dromedary is a sample application created by [Stelligent](https://stelligent.com/) to be a very simple, lightweight yet useful application primarily used
 with AWS. Liatrio forked the application and removed the AWS functionality to
-demostrate a working solution to our enterprise and non AWS customers. If you
+demonstrate a working solution to our enterprise and non AWS customers. If you
 are interested in seeing this work with AWS, please see [Stelligent's Github](https://github.com/stelligent/dromedary)
 or checkout [Stelligent's Website](https://stelligent.com).  
 
