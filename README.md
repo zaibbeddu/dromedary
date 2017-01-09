@@ -1,20 +1,25 @@
-# dromedary :dromedary_camel: <img align="right" src="public/liatrio.png">
-Dromedary is a sample application used by Liatrio to demonstrate CI/CD methods.
+# dromedary :dromedary_camel:
+Dromedary is a sample application created by [Stelligent](https://stelligent.com/)
+to be used as a very simple, lightweight yet useful application primarily used
+with AWS. Liatrio forked the application and removed the AWS functionality to
+demostrate a working solution to our enterprise and non AWS customers. If you
+are interested in seeing this work with AWS, please see [Stelligent's Github](https://github.com/stelligent/dromedary)
+or checkout [Stelligent's Website](https://stelligent.com).  
 
 ### The Demo App :dromedary_camel:  
 
-The Dromedary demo app is a simple nodejs application that displays a pie chart to users. The data that
+The Dromedary demo app is a simple Nodejs application that displays a pie chart to users. The data that
 describes the pie chart (i.e. the colors and their values) is served by the application.
 
 If a user clicks on a particular color segment in the chart, the frontend will send a request to the
 backend to increment the value for that color and update the chart with the new value.
 
 The frontend will also poll the backend for changes to values of the colors of the pie chart and update the chart
-appropriately. If it detects that a new version of the app has been deployed, it will reload the page.
+appropriately.
 
 ### Running Locally :dromedary_camel:  
-  
-#### Install Prerequisites 
+
+#### Install Prerequisites
 
 1. Ensure [nodejs](https://nodejs.org/) and [npm](https://www.npmjs.com/) are installed
   * On Mac OS X, this can be done via [Homebrew](http://brew.sh/): `brew install node`
@@ -59,12 +64,3 @@ app:
 1. Run `gulp dist`
 
 `dist/archive.tar.gz` will be created if this task run successfully.  
-  
-### Infrastructure as Code
-
-Dromedary was featured by [Paul Duvall](https://twitter.com/PaulDuvall),
-[Stelligent](http://www.stelligent.com/)'s Chief Technology Officer, during the
-ARC307: Infrastructure as Code breakout session at 2015
-[AWS re:Invent](https://reinvent.awsevents.com/).
-
-Click [here](https://www.youtube.com/watch?v=WL2xSMVXy5w) to view a recording of the re:Invent breakout session or, to view a shorter 10-minute walkthrough of the demo, click [here](https://stelligent.com/2015/11/17/stelligent-aws-continuous-delivery-demo-screencast/).
