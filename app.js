@@ -8,7 +8,7 @@ var DDBP = require(__dirname + '/lib/dynamoDbPersist.js');
 var serverPort = process.env.PORT || 8080;
 var siteChartStore = {};
 var ddbLastFetch = {};
-var featureToggles = require(__dirname + '/feature-toggles')
+var featureToggles = require(__dirname + '/feature-toggles');
 
 module.exports = app;
 
