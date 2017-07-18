@@ -19,7 +19,7 @@ var argv        = require('yargs').argv;
 
 
 // default is 8000, which might be common
-var ddbLocalPort = 18079;
+var ddbLocalPort = 8079;
 
 // Delete the dist directory
 gulp.task('clean', function (cb) {
