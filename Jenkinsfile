@@ -12,8 +12,8 @@ pipeline {
         */
             steps {
                 echo 'Setting up the docker container'
-                sh 'docker build -t node:8.1.4 .'
-                sh 'docker run -p 18080:8080 -d --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary'
+                sh 'docker build -t dromnode .'
+                sh 'docker run -p 18080:8080 -d --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary dromnode'
             }
         }
         stage('Test') {
