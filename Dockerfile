@@ -8,4 +8,3 @@ RUN (cd /dromedary; npm install)
 RUN (cd /dromedary; npm install gulp -g)
 
 WORKDIR /dromedary
-ENTRYPOINT gulp
