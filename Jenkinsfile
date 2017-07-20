@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run local container') {
             steps {
-                sh 'docker run -p 18080:8080 -d --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary dromnode'
+                sh 'docker run -p 18080:8080 -d --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary dromnode gulp'
                 echo "Should be accessible at http://localhost:18080"
             }
         }
