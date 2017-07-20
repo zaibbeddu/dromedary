@@ -10,7 +10,7 @@ pipeline {
         stage('Testing') {
             steps {
                 echo "Running gulp test"
-                sh 'docker run --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary-testing dromnode gulp test'
+                sh 'docker run --network=${LDOP_NETWORK_NAME} --name stelligent-dromedary-testing dromnode "gulp test"'
             }
         }
         stage('Run local container') {
