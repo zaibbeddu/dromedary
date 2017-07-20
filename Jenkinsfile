@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Stop local container') {
             steps {
-                sh 'docker rm -f stelligent-dromedary || true'
+                sh 'docker rm -f local-dromedary || true'
             }
         }
         stage('Deploy to dev') {
