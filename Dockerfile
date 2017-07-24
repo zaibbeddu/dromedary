@@ -7,8 +7,9 @@ COPY . /dromedary/
 # Update packages, install java and get project dependencies
 RUN apt-get update && \
   apt-get install default-jre -y && \
-  (cd /dromedary; npm install) && \
-  (cd /dromedary; npm install gulp -g)
+  cd /dromedary && \
+  npm install && \
+  npm install gulp -g
 
 # Set the working directory to the repository
 WORKDIR /dromedary
