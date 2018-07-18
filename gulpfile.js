@@ -16,6 +16,7 @@ var del         = require('del');
 var fs          = require('fs');
 var runSequence = require('run-sequence');
 var argv        = require('yargs').argv;
+var cucumber    = require('gulp-cucumber');
 
 
 // default is 8000, which might be common
@@ -30,6 +31,11 @@ gulp.task('clean', function (cb) {
 gulp.task('test', function () {
   return gulp.src('test/*.js', {read: false})
              .pipe(mocha({reporter: 'spec'}));
+});
+
+gulp.task('cucumber', function() {
+  return gulp.src('features/*')
+	            .pipe(cucumber({'steps': 'features/steps/steps.js', 'format': 'summary'}));
 });
 
 // JSHint
