@@ -2,8 +2,8 @@ language: node_js
 node_js:
 - '7.2'
 beforescript:
+- npm install -g 
 - npm install -S gulp
-- npm install
 script: gulp package-app
 deploy:
   api_key:
