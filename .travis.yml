@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-- "7.2"
+- '7.2'
 beforescript:
 - npm install -g gulp
 - npm install
-script:
-gulp package-app
+script: gulp package-app
+deploy:
+  api_key:
+    secure: cnx70UrBiOaAkBa7EWM5fDr4oIubP9wBPlffBm4E88THbgA3Dg/MO4UxB+4C2gq9ina1t93WTCxGtXSGF39akf2UgRpDnrDZadsL/3j8BiLONTaDMKwg9cvWCXNzEyxHvdx9kBDURTgFk9Xv0+FJU/swm3uWW17eyuhLJ9kwljkfHjkGhIe7eqoaXkdmcJSpqV/0j7J7TRrsZBNqxyGCZydTQ63/gjSbjfbTI/GI5XkfZLQPHe8k9XQ7LeTeVKAuO84E2p7QBAVjpS59JOWv+npCYqk62JlZB+sJhxIDcQUqXFqx3dIpCJgWUEFFoeL4bvcc5tQ3v/Uhzpb6ZNHNHMBBiOVCIK3ndtIyVE8uy2EpPqaNJnt6sGKjt1fMGHQ02ZnZkQjb6rRN45uX15GI/g1ulqm4g9GspVsMtoc1EL0FLtdFmx6gh7XvteJFHbC/9+++11keibSrtB3Suz3tIX78u/A0X04PVaXopkM5kvAU4HtnnofDIVWriL+QtrpXOaieqNFcAkFaIMG0e5xVtHccSiz3S6imt03QzAWRKo0QJjLka0da6iYUFG2b0qDPessubSGqMTDCfMs9Y3Piz+vuJKO5YezdObyqTbhJOGFqRQIx2v7l8kvDlp0N6uvVolg1CSpGqjEehh92uCh2tS7c9aR9EdilADafieNW3SM=
+provider: heroku
+app: guarded-ravine-96365
