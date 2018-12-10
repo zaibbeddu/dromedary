@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - '7.2'
 beforescript:
+- npm install cucumber@4.2.1
 - npm install -g 
 - npm install -S gulp
 script: gulp package-app
