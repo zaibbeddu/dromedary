@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '7.2'
 beforescript:
-- npm install -g gulp
+- npm install -S gulp
 - npm install
 script: gulp package-app
 deploy:
